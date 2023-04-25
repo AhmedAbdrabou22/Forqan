@@ -129,7 +129,69 @@ body{
 /**Style section background */
 
 
+/**Section Main */
 
+.main .btns{
+    padding: 8px 10px;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:0;
+    margin: 10px;
+    background-color: transparent;
+}
+.main ul{
+    border-bottom: 1px solid var(--color-dark);
+}
+.main .content{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+.main .surah{
+    border: 2px solid #ebeef0;
+    min-height:10px;
+    min-width:350px;
+    padding:10px;
+    cursor:pointer;
+    margin: 10px;
+}
+.main .surah.surah:hover{
+    border: 2px solid #79ffe1;
+}
+.main .surah.surah:hover .diamond{
+    background-color: #2ca4ab;
+}
+.main .surah.surah:hover .diamond p{
+    color: var(--color-white);
+}
+.main .surah{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.main .text_surah{
+    display: inline;
+}
+.main .diamond {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: #f4f5f6;
+    display: inline;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+}
+.main .diamond p{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/**Section Main */
 
 @media(max-width:768px){
     .trending{
