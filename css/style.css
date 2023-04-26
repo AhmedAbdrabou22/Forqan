@@ -109,6 +109,7 @@ body{
     left:5%;
     font-size: 20px;
     color: #2ca4ab;
+    cursor: pointer;
 }
 .background .trending {
     text-align: center;
@@ -193,6 +194,75 @@ body{
     -o-transform: rotate(-45deg);
 }
 /**Section Main */
+
+
+
+/**Section pop ayat */
+.ayat-pop{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100vh;
+    z-index:2;
+    background-color:#fff;  
+    overflow-y: scroll;
+    /* display: none; */
+    transform: translateX(100%);
+}
+.ayat-pop.active{
+    /* display: block; */
+    transform: translateX(0);
+    transition: 0.7s transform ease-in-out;
+}
+.ayat-pop.active2{
+    transform: translateX(100%);
+    transition: 0.7s transform ease-in;
+}
+.ayat-pop::-webkit-scrollbar{
+    width:10px;
+    background-color:var(--color-dark);
+}
+.ayat-pop::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+.ayat-pop .close{
+    position:sticky;
+    top:5px;
+    right:0px;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    box-shadow: 0 0  4px rgba(0,0,0,0.4);
+    text-align:center;
+    line-height:2;
+    cursor: pointer;
+}
+.ayat-pop .ayats{
+    padding:20px;
+    text-align: center;
+    width:90%;
+    margin:20px auto 0px ;
+    text-align:center;
+}
+.ayat-pop .ayats p{
+    border-bottom: 2px solid var(--color-dark);
+    padding:5px;
+    width:100%;
+    text-align: center;
+    font-size: 23px;
+}
+/**Section pop ayat */
+
+#play{
+    cursor: pointer;
+}
+#pause{
+    cursor: pointer;
+    display: none;
+}
 
 @media(max-width:768px){
     .trending{
