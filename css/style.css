@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Noto+Nastaliq+Urdu&family=Poppins:ital@1&family=Tajawal:wght@300&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: 0;
     appearance: none;
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     font-family: poppins, sans-serif;
     background-color: var(--color-background);
     /* overflow-x: hidden; */
     color: var(--color-dark);
 }
+
 :root {
     --color-primary: #7380ec;
     --color-danger: #ff7782;
@@ -34,36 +37,41 @@ body{
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-    --color-c:#000;
+    --color-c: #000;
 }
 
 
 /**Style Nav bar  */
-.nav{
+.nav {
     background: var(--color-white);
 }
-.nav .tools i{
+
+.nav .tools i {
     font-size: 20px;
-    padding:6px;
+    padding: 6px;
     cursor: pointer;
 }
-.nav .home h4{
+
+.nav .home h4 {
     display: inline-block;
-    margin-right:5px;
+    margin-right: 5px;
     cursor: pointer;
 }
-.nav .home i{
+
+.nav .home i {
     cursor: pointer;
 }
-.nav .offcanvas{
-    width:250px;
+
+.nav .offcanvas {
+    width: 250px;
 }
+
 /**Style Nav bar  */
 
 
 /**Style section background */
-.background{
-    padding:80px 50px;
+.background {
+    padding: 80px 50px;
     background-image: url(../imgs/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -71,56 +79,63 @@ body{
     height: 70vh;
     position: relative;
 }
-.background .image{
-    width:100%;
+
+.background .image {
+    width: 100%;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    -webkit-transform: translate(-50%,);
-    -moz-transform: translate(-50%,);
-    -ms-transform: translate(-50%,);
-    -o-transform: translate(-50%,);
+    -webkit-transform: translate(-50%, );
+    -moz-transform: translate(-50%, );
+    -ms-transform: translate(-50%, );
+    -o-transform: translate(-50%, );
 }
-.background .image svg{
+
+.background .image svg {
     width: 20%;
     fill: var(--color-white);
 }
-.background .search_strategy{
+
+.background .search_strategy {
     margin: auto;
     position: relative;
-    width:60%;
+    width: 60%;
 }
-.background .search_strategy input[type="search"]{
+
+.background .search_strategy input[type="search"] {
     width: 100%;
-    padding:var(--padding-1);
+    padding: var(--padding-1);
     border-radius: var(--border-radius-3);
     -webkit-border-radius: var(--border-radius-3);
     -moz-border-radius: var(--border-radius-3);
     -ms-border-radius: var(--border-radius-3);
     -o-border-radius: var(--border-radius-3);
-    outline:none;
+    outline: none;
     border: 1px solid transparent;
 }
-.background .search_strategy i{
+
+.background .search_strategy i {
     position: absolute;
-    top:40%;
-    left:5%;
+    top: 40%;
+    left: 5%;
     font-size: 20px;
     color: #2ca4ab;
     cursor: pointer;
 }
+
 .background .trending {
     text-align: center;
     margin-top: 50px;
 }
-.background .trending .trend{
+
+.background .trending .trend {
     text-align: center;
     margin: auto;
     border-radius: 10px;
     cursor: pointer;
-    padding:0px 8px;
+    padding: 0px 8px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -133,49 +148,58 @@ body{
 
 /**Section Main */
 
-.main .btns{
+.main .btns {
     padding: 8px 10px;
     outline: none;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom:0;
+    border-bottom: 0;
     margin: 10px;
     background-color: transparent;
 }
-.main ul{
+
+.main ul {
     border-bottom: 1px solid var(--color-dark);
 }
-.main .content{
+
+.main .content {
     display: flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.main .surah{
+
+.main .surah {
     border: 2px solid #ebeef0;
-    min-height:10px;
-    min-width:350px;
-    padding:10px;
-    cursor:pointer;
+    min-height: 10px;
+    min-width: 350px;
+    padding: 10px;
+    cursor: pointer;
     margin: 10px;
 }
-.main .surah.surah:hover{
+
+.main .surah.surah:hover {
     border: 2px solid #79ffe1;
 }
-.main .surah.surah:hover .diamond{
+
+.main .surah.surah:hover .diamond {
     background-color: #2ca4ab;
 }
-.main .surah.surah:hover .diamond p{
+
+.main .surah.surah:hover .diamond p {
     color: var(--color-white);
 }
-.main .surah{
+
+.main .surah {
     display: flex;
     /* justify-content: center; */
     align-items: center;
 }
-.main .text_surah{
+
+.main .text_surah {
     display: inline;
 }
+
 .main .diamond {
     width: 30px;
     height: 30px;
@@ -186,86 +210,109 @@ body{
     color: black;
     text-align: center;
 }
-.main .diamond p{
+
+.main .diamond p {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
 }
+
 /**Section Main */
 
 
 
 /**Section pop ayat */
-.ayat-pop{
+.ayat-pop {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100vh;
-    z-index:2;
-    background-color:#fff;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: #fff;
     overflow-y: scroll;
     /* display: none; */
     transform: translateX(100%);
 }
-.ayat-pop.active{
+
+.ayat-pop.active {
     /* display: block; */
     transform: translateX(0);
     transition: 0.7s transform ease-in-out;
 }
-.ayat-pop.active2{
+
+.ayat-pop.active2 {
     transform: translateX(100%);
     transition: 0.7s transform ease-in;
 }
-.ayat-pop::-webkit-scrollbar{
-    width:10px;
-    background-color:var(--color-dark);
+
+.ayat-pop::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--color-dark);
 }
-.ayat-pop::-webkit-scrollbar-thumb{
+
+.ayat-pop::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
-.ayat-pop .close{
-    position:sticky;
-    top:5px;
-    right:0px;
-    width:32px;
-    height:32px;
+
+.ayat-pop .close {
+    position: sticky;
+    top: 5px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    box-shadow: 0 0  4px rgba(0,0,0,0.4);
-    text-align:center;
-    line-height:2;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    line-height: 2;
     cursor: pointer;
 }
-.ayat-pop .ayats{
-    padding:20px;
+
+.ayat-pop .ayats {
+    padding: 20px;
     text-align: center;
-    width:90%;
-    margin:20px auto 0px ;
-    text-align:center;
+    width: 90%;
+    margin: 20px auto 0px;
+    text-align: center;
 }
-.ayat-pop .ayats p{
+
+.ayat-pop .ayats p {
     border-bottom: 2px solid var(--color-dark);
-    padding:5px;
-    width:100%;
+    padding: 5px;
+    width: 100%;
     text-align: center;
     font-size: 23px;
 }
+
 /**Section pop ayat */
 
-#play{
+#play {
     cursor: pointer;
 }
-#pause{
+
+#pause {
     cursor: pointer;
     display: none;
 }
 
-@media(max-width:768px){
-    .trending{
+.controls {
+    background-color: white;
+    padding: var(--padding-1);
+    width: 50%;
+    margin: auto;
+}
+
+
+
+@media(max-width:768px) {
+    .trending {
         display: none;
     }
 }
+
+
+

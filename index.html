@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=IBM+Plex+Sans+Arabic:wght@300&family=Noto+Nastaliq+Urdu&family=Poppins:ital@1&family=Tajawal:wght@300&display=swap"
         rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <title>الفرقان</title>
 </head>
 
@@ -134,11 +135,16 @@
             <i class="fas fa-times"></i>
         </div>
         <div class="ayat">
-            <div class="ayats"></div>
-            <div class="controls text-center">
+            <div class="controls text-center shadow sticky-top mt-2">
                 <i class="fa-solid fa-play" id="play"></i>
                 <i class="fa-solid fa-pause" id="pause"></i>
+                <!--progress bar-->
+                <div class="w3-light-grey">
+                    <div id="myBar" class="w3-green bg-primary" style="height:15px;width:0"></div>
+                </div>
+                <!--brogress bar-->
             </div>
+            <div class="ayats"></div>
         </div>
     </section>
     <!--section pop-->
